@@ -114,4 +114,17 @@
         android:layout_alignBottom="@+id/sendButton"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <Button
+        android:background="@drawable/button_shape"
+        android:text="@string/open_web_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendButton3"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:onClick="openWebPage"
+        android:layout_alignBaseline="@+id/sendButton2"
+        android:layout_alignBottom="@+id/sendButton2"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

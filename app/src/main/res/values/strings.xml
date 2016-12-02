@@ -7,4 +7,5 @@
     <string name="send_us_an_email">Send us an Email</string>
     <string name="enter_your_subject">Enter your subject</string>
     <string name="sendtext">sendText</string>
+    <string name="open_web_page">Open web page</string>
 </resources>

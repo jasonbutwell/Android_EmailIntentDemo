@@ -25,6 +25,14 @@ public class MainActivity extends AppCompatActivity {
         message = (EditText)findViewById(R.id.Message);
     }
 
+    public void openWebPage(View view) {
+        String url="http://www.google.com";
+
+        Intent webIntent = new Intent(Intent.ACTION_VIEW);
+        webIntent.setData(Uri.parse(url));
+        startActivity(webIntent);
+    }
+
     public void sendText( View view ) {
         smsIntent = new Intent(Intent.ACTION_VIEW);
 
