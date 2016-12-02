@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText name, phone, subject, message;
 
-    Intent emailIntent, chooserIntent = null;
+    Intent smsIntent, emailIntent, chooserIntent = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void sendText( View view ) {
-        
+        smsIntent = new Intent(Intent.ACTION_VIEW);
+
+        String bodyTextSMS = "SMS From: " + name.getText().toString() + ", Phone number: " + phone.getText().toString() + "\n\n"+ message.getText().toString();
+
+        smsIntent.putExtra("sms_body",bodyTextSMS);
+        smsIntent.setType("vnd.android-dir/mms-sms");
+        smsIntent.setData(Uri.parse("sms:07475653985"));
+
+        startActivity(smsIntent);
     }
 
     public void sendEmail(View view) {
