@@ -127,4 +127,14 @@
         android:layout_alignBaseline="@+id/sendButton2"
         android:layout_alignBottom="@+id/sendButton2"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sendButton3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:id="@+id/openGalleryButton"
+        android:onClick="openGallery" />
 </RelativeLayout>
